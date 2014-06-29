@@ -1,7 +1,9 @@
 $(document).ready(function() {
     $('#submit-item').click(function() {
         var toAdd = $('#item-input').val();
-        $('.list').append('<div class="item">' + toAdd + '</div>')
+        $('.list').append('<p class="item">' + toAdd + '</p>')
+
+        $('#item-input').val('');
     });
 
     //////Mark Complete
@@ -22,9 +24,10 @@ $(document).ready(function() {
     $(document).on('click', '#clear-complete', function() {
     	$('.completed-item').remove();
     });
-
+    
     	
 });
+
 
 
 

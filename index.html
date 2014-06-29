@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-    	<title>To Do</title>
+    	<title>My Shopping List</title>
         <link rel="stylesheet" type="text/css" href="main.css"/>
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
@@ -11,19 +11,16 @@
 		<div class="main">
 
 			<h2 class="title">My Shopping List</h2>
+			<form id="item-form">
+				<input placeholder="type here to add items" type="text" id="item-input"/>
+			</form>
+			<button id="submit-item">Add</button>
+			<button id="clear-complete">All Done!</button>
+			<div class="list">
+				<p class="item">click an item to complete it</p>
 
-
-				<form id="item-form">
-					<input type="text" id="item-input"/>
-				</form>
-				<button id="submit-item">Add!</button>
-
-			
-
-			<button id="clear-complete">Clean It Up!</button>
-			<div class="list"></div>
-		
-
+				<p class="item">click "All Done!" to clear completed items</p>
+			</div>
 			
 		</div>
 	</body>

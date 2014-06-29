@@ -68,6 +68,8 @@ form input {
   width: 250px;
   height: 30px;
   font-size: 14px;
+  border-radius: 5px;
+  padding-left: 8px;
 }
 
 button {
@@ -88,17 +90,18 @@ button {
   border: none;
   color: #fff;
   border-radius: 5px;
+  margin-left: 30px;
 }
 
 .list {
   font-family:garamond;
-  color:#cc0000;
+  color: black;
+  margin-top: 30px;
 }
 
 .item {
-  background: #eeeeee;
   border-radius: 5px;
-  border: 1px solid black;
+  border: 1px solid #53b5e6;
   margin: 3px;
   padding: 0.4em;
   font-size: 1em;
@@ -107,6 +110,12 @@ button {
 }
 
 .completed-item {
-  color: green;
-  text-decoration:line-through;
+  border-radius: 5px;
+  border: 1px solid #ff4949;
+  margin: 3px;
+  padding: 0.4em;
+  font-size: 1em;
+  height: 16px;
+  width: 100%;
+  text-decoration: line-through;
 }
