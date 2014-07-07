@@ -4,8 +4,11 @@
     	<title>My Shopping List</title>
         <link rel="stylesheet" type="text/css" href="main.css"/>
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-        <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
         <script type="text/javascript" src="app.js"></script>
+        <script src='jquery-sortable.js'></script>
+        
 	</head>
 	<body>
 		<div class="main">
@@ -16,11 +19,11 @@
 			</form>
 			<button id="submit-item">Add</button>
 			<button id="clear-complete">All Done!</button>
-			<div class="list">
-				<p class="item">click an item to complete it</p>
+			<ul class="list">
+				<li class="item">click an item to complete it</li>
 
-				<p class="item">click "All Done!" to clear completed items</p>
-			</div>
+				<li class="item">click "All Done!" to clear completed items</li>
+			</ul>
 			
 		</div>
 	</body>

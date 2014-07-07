@@ -1,7 +1,7 @@
 $(document).ready(function() {
     $('#submit-item').click(function() {
         var toAdd = $('#item-input').val();
-        $('.list').append('<p class="item">' + toAdd + '</p>')
+        $('.list').append('<li class="item">' + toAdd + '</li>')
 
         $('#item-input').val('');
     });
@@ -9,7 +9,7 @@ $(document).ready(function() {
     //////Mark Complete
     $(document).on('click', '.item', function() {
     	$(this).addClass('completed-item');
-    	$(this).append()
+    	$(this).append();
 
     });
 
@@ -24,6 +24,13 @@ $(document).ready(function() {
     $(document).on('click', '#clear-complete', function() {
     	$('.completed-item').remove();
     });
+
+    
+
+    $(function  () {
+  $("ul.list").sortable()
+	});
+    
     
     	
 });

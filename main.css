@@ -109,6 +109,7 @@ button {
   width: 100%;
 }
 
+
 .completed-item {
   border-radius: 5px;
   border: 1px solid #ff4949;
@@ -118,4 +119,22 @@ button {
   height: 16px;
   width: 100%;
   text-decoration: line-through;
+}
+
+body.dragging, body.dragging * {
+	cursor: move !important;
+}
+
+.dragged {
+	position: absolute;
+	opacity: 0.5;
+	z-index: 2000;
+}
+
+ul.list li.placeholder {
+	position: relative;
+}
+
+ul.list li.placeholder:before {
+	position: absolute;
 }
